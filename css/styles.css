@@ -1,0 +1,91 @@
+/*
+    Author: Miron Attard
+    Date: 15 November 2026
+    Description: Styles for the website.
+*/
+
+/* Header style class - applies to the top header of the website */
+.site-header {
+    position: sticky; /* Allows the element to stay when the page scrolls */
+    margin: 0;
+    top: 0;
+    z-index: 1; /* z-index is "vertical" stack height of elements */
+    padding: 1rem 2rem;
+    color: #ffffff;
+    background-color: #15263f;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Dropdown style class - applies to the dropdown menu in the header */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown summary style class - applies to the summary element of the dropdown */
+.dropdown summary {
+    list-style: none;
+    /* Turn the mouse pointer into a clicky hand :D */
+    cursor: pointer;
+}
+
+/* Three line marker for dropdown */
+.dropdown summary::before {
+    content: "";
+
+    /* Create a line in the middle */
+    display: inline-block;
+    width: 1.25rem;
+    height: 2px;
+    margin-right: 0.6rem;
+    vertical-align: middle;
+    background: currentColor;
+
+    /* Create an identical line above and below */
+    box-shadow: 0 -6px currentColor, 0 6px currentColor;
+}
+
+.dropdown summary:hover,
+.dropdown summary:focus-visible {
+    box-shadow: 0 0 0 0.5rem #213e69; /* Extends the highlight without changing layout */
+    background: #213e69;
+}
+
+/* Styles the unordered list inside the dropdown */
+.dropdown ul {
+    position: absolute;
+    right: 0;
+    min-width: 10rem;
+    margin: 0.5rem 0 0;
+    padding: 0.5rem;
+    list-style: none;
+    background: #ffffff;
+    box-shadow: 0 2px 8px #000000;
+}
+
+/* Styles the links inside the dropdown */
+.dropdown a {
+    display: block;
+    padding: 0.5rem;
+    color: #15263f;
+    text-decoration: none; /* Removes underline from links */
+}
+
+/* Highlights a link when the mouse is over it */
+.dropdown a:hover,
+/* Or when it's navigated to by keyboard */
+.dropdown a:focus-visible {
+    background: #e5e7eb;
+}
+
+body {
+    margin: 0;
+}
+
+/* Pads headings and paragraphs in the body of all pages */
+body > p,
+body > h1 {
+    padding: 0 2rem;
+}

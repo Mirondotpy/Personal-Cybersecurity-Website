@@ -1,0 +1,56 @@
+<!--
+    Author: Miron Attard
+    Date: 15 November 2026
+    Description: This page talks about scams
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata to set up the web page's properties -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title of the web page -->
+        <title>Scams - Personal Cybersecurity</title>
+
+        <!-- Go up one folder, then into css to reach the shared stylesheet. -->
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <h1>Personal Cybersecurity Measures</h1>
+
+            <nav aria-label="Main navigation">
+                <details class="dropdown">
+                    <summary>Sections</summary>
+                    <ul>
+                        <!-- Go up one folder for the homepage; sibling pages need only their filenames. -->
+                        <li><a href="../homepage.html">Home Page</a></li>
+                        <li><a href="passwords.html">Passwords</a></li>
+                        <li><a href="scams.html">Scams</a></li>
+                        <li><a href="home-network.html">Home Network</a></li>
+                        <li><a href="data-footprint.html">Data Footprint</a></li>
+                        <li><a href="data-backup.html">Data Backup</a></li>
+                        <li><a href="emergency-response.html">Emergency Response</a></li>
+                        <li><a href="sources.html">Sources</a></li>
+                    </ul>
+                </details>
+            </nav>
+        </header>
+        <h1>Scams</h1>
+        <p></p>
+        
+        <!-- JS script to close dropdown if clicked outside -->
+        <script>
+            const dropdown = document.querySelector(".dropdown");
+
+            document.addEventListener("click", (event) => {
+                // Close the menu if the click was outside the dropdown.
+                if (event.target instanceof Node && !dropdown.contains(event.target)) {
+                    dropdown.open = false;
+                }
+            });
+        </script>
+    </body>
+</html>
