@@ -80,8 +80,16 @@
     background: #e5e7eb;
 }
 
-body {
+body,
+body > p {
     margin: 0;
+}
+
+/* Formats references list according to APA style */
+.apa-reference {
+  padding-left: 4rem; /* Indents all lines by 2 spaces/em */
+  text-indent: -2rem; /* Pulls the first line back to the left margin */
+  line-height: 2; /* Double-spaces the lines */
 }
 
 /* Pads headings and paragraphs in the body of all pages */
