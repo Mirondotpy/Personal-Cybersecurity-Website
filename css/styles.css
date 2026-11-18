@@ -80,9 +80,10 @@
     background: #e5e7eb;
 }
 
-body,
-body > p {
+body {
     margin: 0;
+    font-family: Inter, sans-serif;
+    font-feature-settings: "cv08" 1; /* Adds horizontal bars on capital I */
 }
 
 /* Formats references list according to APA style */
@@ -90,6 +91,12 @@ body > p {
   padding-left: 4rem; /* Indents all lines by an extra tab */
   text-indent: -2rem; /* Pulls the first line back to the left margin */
   line-height: 2; /* Double-spaces the lines */
+  margin: 0; /* Removes space between paragraphs */
+}
+
+.references-title {
+    text-align: center;
+    font-weight: bold;
 }
 
 /* Pads headings and paragraphs in the body of all pages */
