@@ -87,7 +87,7 @@ body > p {
 
 /* Formats references list according to APA style */
 .apa-reference {
-  padding-left: 4rem; /* Indents all lines by 2 spaces/em */
+  padding-left: 4rem; /* Indents all lines by an extra tab */
   text-indent: -2rem; /* Pulls the first line back to the left margin */
   line-height: 2; /* Double-spaces the lines */
 }
