@@ -80,12 +80,6 @@
     background: #e5e7eb;
 }
 
-body {
-    margin: 0;
-    font-family: Inter, sans-serif;
-    font-feature-settings: "cv08" 1; /* Adds horizontal bars on capital I */
-}
-
 /* Formats references list according to APA style */
 .apa-reference {
   padding-left: 4rem; /* Indents all lines by an extra tab */
@@ -99,8 +93,36 @@ body {
     font-weight: bold;
 }
 
+/* Image spanning the full width of the website */
+.big-image {
+    display: block;
+    width: calc(100% - 4rem); /* Margin of 2 rem */
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; /* Max width to prevent it from growing too big on wide screens */
+}
+
+/* Band of colour around an image */
+.image-band {
+    width: 100%;
+    background-color: #227a38;
+}
+
+.image-band + p { /* + combinator denotes adjacent sibling */
+    margin-top: 1.5rem;
+}
+
+/* Removes browser default margin */
+body{
+    margin: 0;
+    background-color: #e2d8cf;
+}
+
 /* Pads headings and paragraphs in the body of all pages */
 body > p,
 body > h1 {
-    padding: 0 2rem;
+    width: calc(100% - 4rem);
+    max-width: 1200px;
+    margin: 0.5rem auto;
 }
