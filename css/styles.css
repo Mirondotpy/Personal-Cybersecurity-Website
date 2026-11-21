@@ -184,22 +184,34 @@
         grid-template-columns: 1fr;
     }
 }
+
 /* Removes browser default margin */
 body{
     margin: 0;
-    background-color: #e2d8cf;
-    font-family: Inter, sans-serif;
-    font-feature-settings: "cv08" 1; /* Adds horizontal bars on capital I */
+    background-color: #e2d8cf; /* Off-white background */
+    font-family: Arial, sans-serif;
+    padding-bottom: 100px;
 }
 
-/* Pads paragraphs in the body of all pages */
+/* Paragraph and header 2 style */
 body > p{
     width: calc(100% - 4rem);
     max-width: 1200px;
     margin: 0.5rem 2rem;
-    font-size: larger;
+    font-size: large;
 }
 
+body > p + 
+
+/* Header 2 style */
+body > h2{
+    width: calc(100% - 4rem);
+    max-width: 1200px;
+    margin: 0.5rem 2rem;
+    font-size: x-large;
+}
+
+/* Header 1 style */
 body > h1{
     text-align: center;
     width: calc(100% - 4rem);
