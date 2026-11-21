@@ -128,15 +128,26 @@
 /* Holds an image and text side by side */
 .imgTextContainer {
     display: flex; /* Places children side-by-side */
-    align-items: top;
+    align-items: flex-start;
     gap: 28px; /* Adds space between the image and text */
     margin: 2rem 2rem;
     max-width: 1200px;
 }
 
+.imgTextContainer > * {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
 .imgTextContainer img {
     width: 100%;
-    max-width: 1000px;
+    max-width: 100%;
+    height: auto;
+}
+
+.imgTextContainer img.imgSmaller{
+    width: 100%;
+    max-width: 600px;
     height: auto;
 }
 
@@ -183,6 +194,7 @@
     .stat-grid {
         grid-template-columns: 1fr;
     }
+    
 }
 
 /* Removes browser default margin */
@@ -193,7 +205,7 @@ body {
     padding-bottom: 100px;
 }
 
-/* Paragraph and header 2 style */
+/* Paragraph style */
 body > p {
     width: calc(100% - 4rem);
     max-width: 1200px;
@@ -201,12 +213,15 @@ body > p {
     font-size: large;
 }
 
+/* Lists that follow paragraphs connect to them */
 body > p + ul {
     margin-top: 0rem;
 }
 
+/* List items inside body */
 body > ul > li {
     margin-top: 0.5rem;
+    max-width: 1200px;
 }
 
 /* Header 2 style */
