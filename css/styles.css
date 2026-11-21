@@ -186,7 +186,7 @@
 }
 
 /* Removes browser default margin */
-body{
+body {
     margin: 0;
     background-color: #e2d8cf; /* Off-white background */
     font-family: Arial, sans-serif;
@@ -194,17 +194,23 @@ body{
 }
 
 /* Paragraph and header 2 style */
-body > p{
+body > p {
     width: calc(100% - 4rem);
     max-width: 1200px;
     margin: 0.5rem 2rem;
     font-size: large;
 }
 
-body > p + 
+body > p + ul {
+    margin-top: 0rem;
+}
+
+body > ul > li {
+    margin-top: 0.5rem;
+}
 
 /* Header 2 style */
-body > h2{
+body > h2 {
     width: calc(100% - 4rem);
     max-width: 1200px;
     margin: 0.5rem 2rem;
@@ -212,7 +218,7 @@ body > h2{
 }
 
 /* Header 1 style */
-body > h1{
+body > h1 {
     text-align: center;
     width: calc(100% - 4rem);
     max-width: 1200px;
