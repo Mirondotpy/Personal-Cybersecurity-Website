@@ -95,30 +95,55 @@
     padding-top: 2rem;
 }
 
-/* Image spanning the full width of the website */
-.big-image {
+/* Images spanning most or half of the website */
+.big-image,
+.med-image {
     display: block;
-    width: calc(100% - 4rem); /* Margin of 2 rem */
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+}
+
+.big-image {
+    width: calc(100% - 4rem); /* Margin of 2 rem */
     max-width: 1200px; /* Max width to prevent it from growing too big on wide screens */
 }
 
-/* Medium-sized image spanning half the width of the site */
 .med-image {
-    display: block;
     width: 50%; /* Margin of 2 rem */
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 600px; /* Max width to prevent it from growing too big on wide screens */
+}
+
+.big-image-link,
+.med-image-link {
+    display: block;
+}
+
+.big-image-link {
+    margin: 2rem 0;
 }
 
 /* Band of colour around an image */
 .image-band {
     width: 100%;
     background-color: var(--bandColour, #15263f);
+}
+
+.image-band .big-image-link {
+    width: calc(100% - 4rem);
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.image-band .med-image-link {
+    width: 50%;
+    max-width: 600px;
+}
+
+.image-band .big-image-link .big-image,
+.image-band .med-image-link .med-image {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
 }
 
 .image-band + p { /* + combinator denotes adjacent sibling */
