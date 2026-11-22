@@ -109,13 +109,13 @@
 }
 
 .med-image {
-    width: 50%; /* Margin of 2 rem */
-    max-width: 600px; /* Max width to prevent it from growing too big on wide screens */
+    width: 50%; /* Medium images are half their normal size */
+    max-width: 600px; /* Prevent it from growing too big on wide screens */
 }
 
 .big-image-link,
 .med-image-link {
-    display: block;
+    display: block; /* Makes the links behave like a clickable area */
 }
 
 .big-image-link {
@@ -128,6 +128,7 @@
     background-color: var(--bandColour, #15263f);
 }
 
+/* Set restrictions on the clickable area of image links */
 .image-band .big-image-link {
     width: calc(100% - 4rem);
     max-width: 1200px;
