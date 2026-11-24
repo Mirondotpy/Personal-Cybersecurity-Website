@@ -18,6 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: 'Bank Gothic', 'Eurostile', 'Bahnschrift', 'Segoe UI', sans-serif;
 }
 
 /* Dropdown style class - applies to the dropdown menu in the header */
@@ -222,6 +223,7 @@
 
 .stat-box strong {
     display: block;
+    font-family: monospace;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
     font-size: 2rem;
@@ -282,11 +284,17 @@ body > h2 {
     width: calc(100% - 4rem);
     max-width: 1200px;
     margin: 0.5rem 2rem;
+}
+
+/* This one will contain h2 anywhere, instead of just direct children */
+body h2 {
+    font-family: 'Bank Gothic', 'Eurostile', 'Bahnschrift', 'Segoe UI', sans-serif;
     font-size: x-large;
 }
 
 /* Header 1 style */
 body > h1 {
+    font-family: 'Bank Gothic', 'Eurostile', 'Bahnschrift', 'Segoe UI', sans-serif;
     text-align: center;
     width: calc(100% - 4rem);
     max-width: 1200px;
