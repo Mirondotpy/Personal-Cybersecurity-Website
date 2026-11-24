@@ -138,6 +138,7 @@
 .image-band .med-image-link {
     width: 50%;
     max-width: 600px;
+    margin-inline: auto;
 }
 
 .image-band .big-image-link .big-image,
