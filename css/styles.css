@@ -148,6 +148,11 @@
     margin: 0;
 }
 
+/* Removes space above image header if it's at the top of the page */
+.site-header + .image-band .big-image-link {
+    margin-top: 0;
+}
+
 .image-band + p { /* + combinator denotes adjacent sibling */
     margin-top: 1.5rem;
 }
