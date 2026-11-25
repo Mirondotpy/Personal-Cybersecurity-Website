@@ -1,2 +1,4 @@
 # Personal-Cybersecurity-Website
 This is a website I made for a grade 12 computer science project. It explores issues in some areas of personal cybersecurity and suggests steps for how to combat or prevent them.
+
+Link to actual site: https://mirondotpy.github.io/Personal-Cybersecurity-Website/homepage.html
